@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% load static %}
+{% block body %}
+ゲーム画面
+<form>
+	<button method="get" type="submit" name="attack" value="1">攻撃</button>
+</form>
+{% if attack %}
+<p>倒した</p>
+{% endif %}
+{% endblock %}
